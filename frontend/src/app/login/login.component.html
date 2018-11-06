@@ -1,0 +1,12 @@
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">username:</label>
+    <input type="text" class="form-control" #username placeholder="Enter username">    
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleInputEmail1">Password:</label>
+    <input type="password" class="form-control" #password placeholder="Enter Password">    
+  </div>
+  
+  <button type="submit" (click)="login(username.value,password.value)"class="btn btn-primary">Submit</button>

@@ -1,0 +1,23 @@
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Full Name:</label>
+    <input type="text" class="form-control" #fullname placeholder="Enter Full Name">    
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">User Name:</label>
+    <input type="text" class="form-control" #username placeholder="Enter User Name">    
+  </div>
+  
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email Id:</label>
+    <input type="email" class="form-control" #emailid placeholder="Enter Email Id">    
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleInputEmail1">Password:</label>
+    <input type="password" class="form-control" #password placeholder="Enter Password">    
+  </div>
+  
+  <button type="submit" (click)="singup(fullname.value,username.value,emailid.value,password.value)"class="btn btn-primary">Submit</button>

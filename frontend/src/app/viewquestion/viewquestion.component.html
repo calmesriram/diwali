@@ -1,0 +1,43 @@
+<!-- <form>
+<input type="submit" value= "Submit" (click)="viewall()">
+</form> -->
+
+
+<table class="table table-hover">
+    <thead>
+      <tr>
+        
+        <th scope="col">Question Id</th>
+        <th scope="col">Question</th>
+        <th scope="col">Option 1</th>
+        <th scope="col">Option 2</th>
+        <th scope="col">Option 3</th>
+        <th scope="col">Option 4</th>
+        <th scope="col">Key answer</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let tabledata of myarray">
+        
+        <td>{{tabledata.question_id}}</td>
+        <td>{{tabledata.question}}</td>
+        <td>{{tabledata.option1}}</td>
+        <td>{{tabledata.option2}}</td>
+        <td>{{tabledata.option3}}</td>
+        <td>{{tabledata.option4}}</td>
+        <td>{{tabledata.keyAnswer}}</td>
+      </tr>
+      <!-- <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr> -->
+    </tbody>
+  </table>
